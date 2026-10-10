@@ -1,0 +1,141 @@
+text,label
+I want to learn about functions and loops in Python.,Python Programming
+How do I write a for loop to iterate over a list in Python?,Python Programming
+"Python variables, strings and f-strings for beginners",Python Programming
+What is the difference between a list and a tuple in Python?,Python Programming
+How to define a function with default arguments in Python,Python Programming
+Using try and except to handle errors in a Python script,Python Programming
+Reading and writing text files with Python,Python Programming
+Understanding dictionaries and sets in Python,Python Programming
+How do list comprehensions work in Python?,Python Programming
+Installing Python packages with pip and virtual environments,Python Programming
+Writing a while loop that stops with a break statement,Python Programming
+What does the def keyword do in Python?,Python Programming
+Python indentation rules and syntax,Python Programming
+How to use the input function to read user input in Python,Python Programming
+Importing modules such as math and random in Python,Python Programming
+"Python classes, objects and inheritance explained",Python Programming
+String slicing and formatting in Python,Python Programming
+How to use lambda functions and the map function in Python,Python Programming
+Python scripts for beginners with if else statements,Python Programming
+Difference between == and is operators in Python,Python Programming
+Using the print function and comments in Python code,Python Programming
+Writing Python code to reverse a string,Python Programming
+What are decorators and generators in Python?,Python Programming
+"Learn Python syntax, data types and loops",Python Programming
+Debugging Python code with error messages and tracebacks,Python Programming
+Using the os and sys modules in a Python program,Python Programming
+"Python return values, parameters and function scope",Python Programming
+Slicing lists and using the range function in Python,Python Programming
+Explain supervised and unsupervised learning,Machine Learning Basics
+What is overfitting and how can I avoid it?,Machine Learning Basics
+How do training and test sets work in machine learning?,Machine Learning Basics
+I want to learn about regression and classification models,Machine Learning Basics
+What are features and labels in a dataset?,Machine Learning Basics
+"Understanding accuracy, precision, recall and F1-score",Machine Learning Basics
+How does the k-nearest neighbours algorithm make predictions?,Machine Learning Basics
+What is a decision tree and how is it trained?,Machine Learning Basics
+Introduction to scikit-learn for building models,Machine Learning Basics
+How does linear regression fit a line to data?,Machine Learning Basics
+What is cross-validation in machine learning?,Machine Learning Basics
+Explain clustering with the k-means algorithm,Machine Learning Basics
+What is gradient descent and the learning rate?,Machine Learning Basics
+Understanding the bias and variance trade-off,Machine Learning Basics
+How to handle missing values and scale features before training a model,Machine Learning Basics
+What is a confusion matrix?,Machine Learning Basics
+Learn about naive Bayes and logistic regression classifiers,Machine Learning Basics
+What is data leakage in a machine learning pipeline?,Machine Learning Basics
+How do I choose a model and tune hyperparameters?,Machine Learning Basics
+Explain TF-IDF and text feature extraction for machine learning,Machine Learning Basics
+What is a loss function and how does a model learn from data?,Machine Learning Basics
+Training a model on labelled data and predicting on unseen data,Machine Learning Basics
+What is the difference between a parameter and a hyperparameter?,Machine Learning Basics
+Learn about random forests and ensemble methods,Machine Learning Basics
+Why do we normalise data before fitting a model?,Machine Learning Basics
+Evaluating a classifier with the ROC curve and AUC,Machine Learning Basics
+How does the support vector machine find a decision boundary?,Machine Learning Basics
+Principal component analysis for dimensionality reduction,Machine Learning Basics
+What is artificial intelligence and where is it used?,Artificial Intelligence
+How do intelligent agents perceive and act in an environment?,Artificial Intelligence
+Explain the A* search algorithm and heuristics,Artificial Intelligence
+What is the Turing test?,Artificial Intelligence
+Applications of AI in healthcare and robotics,Artificial Intelligence
+What are expert systems and knowledge-based reasoning?,Artificial Intelligence
+How do chatbots and virtual assistants understand language?,Artificial Intelligence
+Ethical issues and bias in artificial intelligence,Artificial Intelligence
+What is computer vision and how do machines recognise images?,Artificial Intelligence
+Difference between narrow AI and general AI,Artificial Intelligence
+Explain reinforcement learning with rewards and an agent,Artificial Intelligence
+How do self-driving cars use AI?,Artificial Intelligence
+What is the minimax algorithm in game playing?,Artificial Intelligence
+Natural language processing and speech recognition basics,Artificial Intelligence
+What is a neural network inspired by the human brain?,Artificial Intelligence
+How does generative AI create text and images?,Artificial Intelligence
+The history of AI from the Dartmouth workshop to today,Artificial Intelligence
+Knowledge representation and logical reasoning in AI,Artificial Intelligence
+What is a rational agent and a utility function?,Artificial Intelligence
+"AI safety, fairness and responsible use",Artificial Intelligence
+How do recommendation systems and voice assistants work?,Artificial Intelligence
+Explain deep learning and large language models,Artificial Intelligence
+What is the future of AI and automation in jobs?,Artificial Intelligence
+Constraint satisfaction problems and planning in AI,Artificial Intelligence
+How do robots use sensors and AI to navigate?,Artificial Intelligence
+What is fuzzy logic and probabilistic reasoning?,Artificial Intelligence
+Introduction to AI search such as breadth-first search and heuristic search,Artificial Intelligence
+"Explain how AI systems learn, reason and make decisions",Artificial Intelligence
+Explain stacks and queues with examples,Data Structures and Algorithms
+How does binary search work on a sorted array?,Data Structures and Algorithms
+What is Big O notation and time complexity?,Data Structures and Algorithms
+"Learn about linked lists, nodes and pointers",Data Structures and Algorithms
+How does the merge sort algorithm work?,Data Structures and Algorithms
+"Binary trees, binary search trees and tree traversals",Data Structures and Algorithms
+What is a hash table and how does hashing resolve collisions?,Data Structures and Algorithms
+Breadth-first and depth-first graph traversal,Data Structures and Algorithms
+Dijkstra's shortest path algorithm on a weighted graph,Data Structures and Algorithms
+What is dynamic programming and memoization?,Data Structures and Algorithms
+"Understanding arrays, indexing and insertion",Data Structures and Algorithms
+"Compare bubble sort, insertion sort and quicksort",Data Structures and Algorithms
+What is recursion and how does the call stack work?,Data Structures and Algorithms
+Heaps and priority queues,Data Structures and Algorithms
+How to reverse a linked list,Data Structures and Algorithms
+Space complexity versus time complexity of an algorithm,Data Structures and Algorithms
+Greedy algorithms and the knapsack problem,Data Structures and Algorithms
+How do I solve problems with two pointers and sliding windows?,Data Structures and Algorithms
+What is a balanced AVL tree?,Data Structures and Algorithms
+Sorting algorithms and their worst-case running time,Data Structures and Algorithms
+Adjacency lists and adjacency matrices for graphs,Data Structures and Algorithms
+Implementing a queue using two stacks,Data Structures and Algorithms
+What is the difference between an array and a linked list?,Data Structures and Algorithms
+Backtracking and the N-Queens problem,Data Structures and Algorithms
+Practise coding interview questions on data structures,Data Structures and Algorithms
+How does a trie store strings?,Data Structures and Algorithms
+Finding the shortest path and detecting cycles in a graph,Data Structures and Algorithms
+Learn about algorithm design and complexity analysis,Data Structures and Algorithms
+Explain the OSI model and its seven layers,Computer Networks
+What is the difference between TCP and UDP?,Computer Networks
+How does DNS translate domain names into IP addresses?,Computer Networks
+What is an IP address and how does subnetting work?,Computer Networks
+How does a router forward packets between networks?,Computer Networks
+What is the TCP three-way handshake?,Computer Networks
+"Learn about HTTP, HTTPS and web ports",Computer Networks
+What does DHCP do on a local area network?,Computer Networks
+"Explain network topologies such as star, bus and ring",Computer Networks
+How do switches and MAC addresses work in Ethernet?,Computer Networks
+What is a firewall and how does it filter network traffic?,Computer Networks
+What is NAT and how do private addresses reach the internet?,Computer Networks
+How does ARP map an IP address to a MAC address?,Computer Networks
+"Explain wireless networks, Wi-Fi and bandwidth",Computer Networks
+"What is the difference between LAN, MAN and WAN?",Computer Networks
+"How do email protocols like SMTP, POP3 and IMAP work?",Computer Networks
+"What is latency, throughput and packet loss?",Computer Networks
+Routing protocols such as RIP and OSPF,Computer Networks
+How does SSL and TLS secure data in transit?,Computer Networks
+IPv4 versus IPv6 addressing,Computer Networks
+What is a VPN and how does it create a secure tunnel?,Computer Networks
+"Explain error detection, flow control and congestion control",Computer Networks
+How does the TCP/IP protocol suite work?,Computer Networks
+What is a proxy server and a load balancer?,Computer Networks
+How do FTP and SSH transfer files and connect to remote computers?,Computer Networks
+What are network ports and sockets?,Computer Networks
+Learn about CIDR notation and the subnet mask,Computer Networks
+How is data sent in packets across the internet?,Computer Networks

@@ -1,0 +1,113 @@
+# AI-Powered Quiz Generator and Personalized Learning Assistant
+
+A beginner-friendly Streamlit web app where students practise multiple-choice questions, get instant feedback and
+find out which concepts to revise. A small scikit-learn text classifier suggests a quiz topic from a learning query.
+
+**SDG alignment:** UN Sustainable Development Goal 4 – Quality Education.
+
+## 1. Project overview
+Students choose a topic, difficulty and number of questions, answer the quiz, and receive a score, explanations,
+concept-wise performance and revision suggestions. The questions come from a curated, human-written JSON question
+bank, so every answer is verified in advance (no randomly generated questions).
+
+## 2. Problem statement
+Students often cannot tell how well they understand a topic or what to practise next.
+
+## 3. Motivation
+Quick self-assessment with immediate feedback supports independent learning, which is central to SDG 4.
+
+## 4. Objectives
+- Provide topic-wise MCQ practice with immediate, explained feedback.
+- Calculate scores from the student's real answers.
+- Recommend concepts to revise based on missed questions.
+- Include one genuine ML component (topic classification) with honest evaluation.
+
+## 5. Features (implemented)
+- Home page, topic cards, difficulty (Easy/Medium/Hard/Mixed) and question-count selection
+- One-question-at-a-time quiz with Previous/Next, progress bar, preserved answers, confirm-before-submit
+- Results: total, correct, incorrect, unanswered, percentage, explanations, review of wrong answers, concept/topic performance
+- Rule-based personalised recommendations and related practice questions
+- Session-based quiz history with CSV download
+- Topic Finder: TF-IDF + scikit-learn classifier with an in-app evaluation tab
+- Automated tests (pytest)
+
+## 6. Technology stack
+Python · Streamlit · Pandas · scikit-learn · joblib · JSON/CSV storage · pytest · Git/GitHub · Streamlit Community Cloud.
+No paid APIs, keys or databases.
+
+## 7. System architecture
+```
+data/questions.json ──► utils/quiz_logic.py ──► app.py (Streamlit UI) ◄── utils/recommendations.py
+data/topic_training_data.csv ──► ml/train_model.py ──► models/*.joblib, metrics.json
+                                                          └─► ml/topic_classifier.py ──► app.py (Topic Finder)
+```
+The three parts are separate: **quiz logic** (arithmetic), **recommendation logic** (rules on answer metadata),
+and the **ML model** (learned from data).
+
+## 8. Machine learning methodology
+- Task: multi-class text classification (5 topics).
+- Features: TF-IDF (unigrams + bigrams, English stop words removed).
+- Candidate models: Multinomial Naive Bayes, Logistic Regression, Logistic Regression (C=10), compared by 5-fold
+  cross-validation on the **training set only**.
+- Split: stratified 80/20 train/test, `random_state=42`. The test set is used once for the final evaluation.
+- Leakage control: duplicate sentences are removed; TF-IDF is fitted inside a Pipeline on training text only.
+- Unknown input: empty text, text with no known words, or low confidence (< 0.40) is reported as unknown/uncertain.
+
+## 9. Dataset description
+`data/topic_training_data.csv`: 140 short, hand-written learning queries (28 per topic) with a topic label. It is small and
+written by the project author, so it does not represent every way students phrase queries.
+
+## 10. Model evaluation
+Run `python ml/train_model.py`. Real measured results (accuracy, macro precision/recall/F1, per-topic report,
+confusion matrix) are written to `models/metrics.json` and shown in the app's **Model evaluation** tab.
+Results on a 28-sentence test set are only indicative.
+
+## 11. Installation
+```bash
+git clone <your-repo-url>
+cd ai-quiz-generator
+python -m venv .venv
+# Windows: .venv\Scripts\activate      macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## 12. Run locally
+```bash
+python ml/train_model.py     # trains the classifier and saves models/
+streamlit run app.py         # opens http://localhost:8501
+pip install -r requirements-dev.txt && pytest    # optional: run the tests
+```
+
+## 13. Deployment (Streamlit Community Cloud)
+1. Push the project to a public GitHub repository (commit `models/topic_classifier.joblib` and `models/metrics.json`
+   after training, or use the in-app "Train the model now" button after deployment).
+2. Go to share.streamlit.io, sign in with GitHub, choose **New app**.
+3. Select the repository, branch `main` and main file path `app.py`, then **Deploy**.
+4. Open the app and test every page. Add the real URL here only after you have verified it works.
+
+Deployed link: _to be added after deployment_
+
+## 14. Screenshots
+Add real screenshots to `assets/` and link them here:
+- Home page: _placeholder_
+- Topic selection: _placeholder_
+- Quiz in progress: _placeholder_
+- Results page: _placeholder_
+- Topic classification: _placeholder_
+- Model evaluation: _placeholder_
+
+## 15. Limitations
+- Question bank is small (75 questions) and curated by hand; it is not generated by AI.
+- The classifier is trained on 140 sentences, so it can misclassify unusual wording or overlapping topics (e.g. algorithms vs AI search).
+- Quiz history lasts only for the browser session. No user accounts.
+- Recommendations are rule-based and only reflect one quiz's answers.
+
+## 16. Future enhancements (not implemented)
+Larger question bank, spaced repetition, persistent history/accounts, more topics, a larger and independently collected
+training set, LLM-assisted question drafting with human review.
+
+## 17. Author
+**Name:** _your name here_ · **College:** _your college_ · **Internship:** AICTE–IBM SkillsBuild Machine Learning and Applied AI
+
+## 18. Acknowledgement
+Developed as part of the AICTE–IBM SkillsBuild Machine Learning and Applied AI internship learning programme.

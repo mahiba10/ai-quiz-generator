@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "py-e-01",
+    "topic": "Python Programming",
+    "difficulty": "Easy",
+    "concept": "Basics",
+    "question": "Which built-in function displays output on the screen in Python?",
+    "options": [
+      "display()",
+      "echo()",
+      "print()",
+      "write()"
+    ],
+    "answer_index": 2,
+    "explanation": "print() is Python's built-in function for showing output."
+  },
+  {
+    "id": "py-e-02",
+    "topic": "Python Programming",
+    "difficulty": "Easy",
+    "concept": "Basics",
+    "question": "Which symbol starts a single-line comment in Python?",
+    "options": [
+      "#",
+      "/*",
+      "--",
+      "//"
+    ],
+    "answer_index": 0,
+    "explanation": "Python uses # for single-line comments; the interpreter ignores the rest of that line."
+  },
+  {
+    "id": "py-e-03",
+    "topic": "Python Programming",
+    "difficulty": "Easy",
+    "concept": "Variables",
+    "question": "Which of these is a valid Python variable name?",
+    "options": [
+      "2var",
+      "my_var",
+      "my var",
+      "my-var"
+    ],
+    "answer_index": 1,
+    "explanation": "Names cannot start with a digit or contain hyphens/spaces. Underscores are allowed."
+  },
+  {
+    "id": "py-e-04",
+    "topic": "Python Programming",
+    "difficulty": "Easy",
+    "concept": "Data Types",
+    "question": "What is the data type of [1, 2, 3] in Python?",
+    "options": [
+      "list",
+      "set",
+      "tuple",
+      "dict"
+    ],
+    "answer_index": 0,
+    "explanation": "Square brackets create a list, an ordered and mutable collection."
+  },
+  {
+    "id": "py-e-05",
+    "topic": "Python Programming",
+    "difficulty": "Easy",
+    "concept": "Strings",
+    "question": "What does len(\"hello\") return?",
+    "options": [
+      "5",
+      "6",
+      "hello",
+      "4"
+    ],
+    "answer_index": 0,
+    "explanation": "len() counts characters; \"hello\" has 5 characters."
+  },
+  {
+    "id": "py-m-01",
+    "topic": "Python Programming",
+    "difficulty": "Medium",
+    "concept": "Operators",
+    "question": "What is the output of print(2 ** 3)?",
+    "options": [
+      "6",
+      "9",
+      "5",
+      "8"
+    ],
+    "answer_index": 3,
+    "explanation": "** is the exponent operator, so 2 ** 3 = 2 x 2 x 2 = 8."
+  },
+  {
+    "id": "py-m-02",
+    "topic": "Python Programming",
+    "difficulty": "Medium",
+    "concept": "Loops",
+    "question": "What sequence of numbers does range(3) produce?",
+    "options": [
+      "1, 2, 3",
+      "0, 1, 2",
+      "0, 1, 2, 3",
+      "1, 2"
+    ],
+    "answer_index": 1,
+    "explanation": "range(3) starts at 0 and stops before 3."
+  },
+  {
+    "id": "py-m-03",
+    "topic": "Python Programming",
+    "difficulty": "Medium",
+    "concept": "Functions",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "function",
+      "def",
+      "define",
+      "func"
+    ],
+    "answer_index": 1,
+    "explanation": "Functions are defined with the def keyword."
+  },
+  {
+    "id": "py-m-04",
+    "topic": "Python Programming",
+    "difficulty": "Medium",
+    "concept": "Data Types",
+    "question": "Which of these Python data types is immutable?",
+    "options": [
+      "tuple",
+      "list",
+      "set",
+      "dict"
+    ],
+    "answer_index": 0,
+    "explanation": "Tuples cannot be changed after creation; lists, dicts and sets can."
+  },
+  {
+    "id": "py-m-05",
+    "topic": "Python Programming",
+    "difficulty": "Medium",
+    "concept": "Loops",
+    "question": "What does the break statement do inside a loop?",
+    "options": [
+      "Skips to the next iteration",
+      "Restarts the loop",
+      "Exits the loop immediately",
+      "Pauses the loop"
+    ],
+    "answer_index": 2,
+    "explanation": "break ends the loop at once; continue is the one that skips to the next iteration."
+  },
+  {
+    "id": "py-h-01",
+    "topic": "Python Programming",
+    "difficulty": "Hard",
+    "concept": "Comprehensions",
+    "question": "What is the value of [x * x for x in range(4)]?",
+    "options": [
+      "[0, 1, 4, 9]",
+      "[0, 2, 4, 6]",
+      "[1, 4, 9, 16]",
+      "[0, 1, 2, 3]"
+    ],
+    "answer_index": 0,
+    "explanation": "x takes 0, 1, 2, 3, and each is squared."
+  },
+  {
+    "id": "py-h-02",
+    "topic": "Python Programming",
+    "difficulty": "Hard",
+    "concept": "Functions",
+    "question": "What does a Python function return if it has no return statement?",
+    "options": [
+      "It raises an error",
+      "0",
+      "None",
+      "An empty string"
+    ],
+    "answer_index": 2,
+    "explanation": "Without return, a function returns None."
+  },
+  {
+    "id": "py-h-03",
+    "topic": "Python Programming",
+    "difficulty": "Hard",
+    "concept": "Exceptions",
+    "question": "Which block runs when an error is raised inside a try block?",
+    "options": [
+      "except",
+      "else",
+      "finally only",
+      "catch"
+    ],
+    "answer_index": 0,
+    "explanation": "The except block handles the error. Python has no 'catch' keyword."
+  },
+  {
+    "id": "py-h-04",
+    "topic": "Python Programming",
+    "difficulty": "Hard",
+    "concept": "Strings",
+    "question": "What does \"a,b,c\".split(\",\") return?",
+    "options": [
+      "('a', 'b', 'c')",
+      "['a', 'b', 'c']",
+      "['a,b,c']",
+      "'abc'"
+    ],
+    "answer_index": 1,
+    "explanation": "split() breaks a string at the separator and returns a list."
+  },
+  {
+    "id": "py-h-05",
+    "topic": "Python Programming",
+    "difficulty": "Hard",
+    "concept": "Functions",
+    "question": "Given def f(x, lst=[]): lst.append(x); return lst, what does the second call f(2) return after f(1) was called once?",
+    "options": [
+      "An error",
+      "[1]",
+      "[1, 2]",
+      "[2]"
+    ],
+    "answer_index": 2,
+    "explanation": "The default list is created once and shared between calls, so values accumulate."
+  },
+  {
+    "id": "ml-e-01",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Easy",
+    "concept": "Fundamentals",
+    "question": "Which statement best describes machine learning?",
+    "options": [
+      "Designing computer hardware",
+      "Storing data in a database",
+      "Writing every rule by hand for each situation",
+      "Systems that learn patterns from data to make predictions"
+    ],
+    "answer_index": 3,
+    "explanation": "ML algorithms learn patterns from examples instead of following only hand-written rules."
+  },
+  {
+    "id": "ml-e-02",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Easy",
+    "concept": "Supervised Learning",
+    "question": "Which is an example of supervised learning?",
+    "options": [
+      "Grouping customers with no labels",
+      "Classifying emails as spam using labelled examples",
+      "An agent learning by trial and reward",
+      "Compressing an image"
+    ],
+    "answer_index": 1,
+    "explanation": "Supervised learning uses labelled data (here: spam / not spam)."
+  },
+  {
+    "id": "ml-e-03",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Easy",
+    "concept": "Data and Features",
+    "question": "In machine learning, what are 'features'?",
+    "options": [
+      "The final predictions",
+      "The input variables used to make a prediction",
+      "The programming language used",
+      "The accuracy score"
+    ],
+    "answer_index": 1,
+    "explanation": "Features are the inputs, such as a house's area or a sentence's words."
+  },
+  {
+    "id": "ml-e-04",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Easy",
+    "concept": "Regression vs Classification",
+    "question": "Which of these is a regression task?",
+    "options": [
+      "Predicting the price of a house",
+      "Identifying a handwritten digit",
+      "Choosing a topic label for a sentence",
+      "Deciding if an email is spam"
+    ],
+    "answer_index": 0,
+    "explanation": "Regression predicts a continuous number; the others predict categories."
+  },
+  {
+    "id": "ml-e-05",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Easy",
+    "concept": "Data and Features",
+    "question": "In a spam-detection dataset, what is the 'label'?",
+    "options": [
+      "The sender's address",
+      "The time of sending",
+      "Whether the email is spam or not",
+      "The email's word count"
+    ],
+    "answer_index": 2,
+    "explanation": "The label is the correct answer the model is trying to predict."
+  },
+  {
+    "id": "ml-m-01",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Medium",
+    "concept": "Evaluation",
+    "question": "What is the purpose of a test set?",
+    "options": [
+      "To train the model faster",
+      "To evaluate the model on data it has not seen during training",
+      "To store the model",
+      "To clean missing values"
+    ],
+    "answer_index": 1,
+    "explanation": "A test set gives an honest estimate of performance on new data."
+  },
+  {
+    "id": "ml-m-02",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Medium",
+    "concept": "Overfitting",
+    "question": "What does overfitting mean?",
+    "options": [
+      "The model fits training data too closely and performs poorly on new data",
+      "The dataset is too small to open",
+      "The model is too simple to learn anything",
+      "The model trains too quickly"
+    ],
+    "answer_index": 0,
+    "explanation": "An overfit model memorises noise in the training data instead of general patterns."
+  },
+  {
+    "id": "ml-m-03",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Medium",
+    "concept": "Unsupervised Learning",
+    "question": "Which of the following is a clustering algorithm?",
+    "options": [
+      "K-means",
+      "Linear regression",
+      "Naive Bayes",
+      "Logistic regression"
+    ],
+    "answer_index": 0,
+    "explanation": "K-means groups unlabelled data into clusters."
+  },
+  {
+    "id": "ml-m-04",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Medium",
+    "concept": "Evaluation",
+    "question": "How is accuracy calculated?",
+    "options": [
+      "Errors divided by features",
+      "Correct predictions divided by total predictions",
+      "Predicted positives divided by total",
+      "True positives divided by actual positives"
+    ],
+    "answer_index": 1,
+    "explanation": "Accuracy = correct predictions / all predictions."
+  },
+  {
+    "id": "ml-m-05",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Medium",
+    "concept": "Tools",
+    "question": "Which Python library is widely used for classical machine learning algorithms?",
+    "options": [
+      "Flask",
+      "Requests",
+      "scikit-learn",
+      "Matplotlib"
+    ],
+    "answer_index": 2,
+    "explanation": "scikit-learn provides classifiers, regressors, metrics and preprocessing tools."
+  },
+  {
+    "id": "ml-h-01",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Hard",
+    "concept": "Evaluation Metrics",
+    "question": "What does precision measure?",
+    "options": [
+      "Of all actual positives, the fraction found",
+      "Overall fraction of correct predictions",
+      "The size of the training set",
+      "Of the items predicted positive, the fraction that are truly positive"
+    ],
+    "answer_index": 3,
+    "explanation": "Precision = true positives / (true positives + false positives)."
+  },
+  {
+    "id": "ml-h-02",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Hard",
+    "concept": "Evaluation Metrics",
+    "question": "What does recall measure?",
+    "options": [
+      "Overall accuracy",
+      "Of all actual positives, the fraction the model found",
+      "The training time",
+      "Of predicted positives, the fraction that are correct"
+    ],
+    "answer_index": 1,
+    "explanation": "Recall = true positives / (true positives + false negatives)."
+  },
+  {
+    "id": "ml-h-03",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Hard",
+    "concept": "Data Leakage",
+    "question": "Which situation is an example of data leakage?",
+    "options": [
+      "Using a fixed random seed",
+      "Printing the accuracy",
+      "Fitting a scaler on the full dataset before splitting into train and test",
+      "Splitting data into train and test sets"
+    ],
+    "answer_index": 2,
+    "explanation": "Information from the test set must not influence training or preprocessing."
+  },
+  {
+    "id": "ml-h-04",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Hard",
+    "concept": "Text Features",
+    "question": "What does TF-IDF do?",
+    "options": [
+      "Removes all stop words only",
+      "Weights words by how often they appear in a document and how rare they are across documents",
+      "Counts the number of sentences",
+      "Translates text into another language"
+    ],
+    "answer_index": 1,
+    "explanation": "TF-IDF gives higher weight to words that are frequent in a document but rare overall."
+  },
+  {
+    "id": "ml-h-05",
+    "topic": "Machine Learning Basics",
+    "difficulty": "Hard",
+    "concept": "Evaluation Metrics",
+    "question": "A dataset has 95% negative examples. A model that always predicts 'negative' gets 95% accuracy. What does this show?",
+    "options": [
+      "Accuracy can be misleading on imbalanced data",
+      "The model is excellent",
+      "The dataset is too large",
+      "Precision is always 95%"
+    ],
+    "answer_index": 0,
+    "explanation": "On imbalanced data, accuracy hides poor performance on the minority class; check precision, recall and F1."
+  },
+  {
+    "id": "ai-e-01",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "concept": "Fundamentals",
+    "question": "Artificial Intelligence is best described as:",
+    "options": [
+      "Machines performing tasks that normally need human intelligence",
+      "A type of computer hardware",
+      "A programming language",
+      "A kind of database"
+    ],
+    "answer_index": 0,
+    "explanation": "AI aims to let machines perform tasks such as understanding language or recognising images."
+  },
+  {
+    "id": "ai-e-02",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "concept": "Applications",
+    "question": "Which is an everyday example of AI?",
+    "options": [
+      "A paper calendar",
+      "A basic calculator",
+      "A voice assistant that understands spoken requests",
+      "A printed map"
+    ],
+    "answer_index": 2,
+    "explanation": "Voice assistants use speech recognition and language understanding."
+  },
+  {
+    "id": "ai-e-03",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "concept": "NLP",
+    "question": "What does NLP stand for in AI?",
+    "options": [
+      "Natural Language Processing",
+      "Numeric Logic Processing",
+      "Neural Learning Protocol",
+      "Network Layer Programming"
+    ],
+    "answer_index": 0,
+    "explanation": "NLP enables computers to work with human language."
+  },
+  {
+    "id": "ai-e-04",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "concept": "Computer Vision",
+    "question": "What does computer vision enable computers to do?",
+    "options": [
+      "Interpret images and video",
+      "Connect to the internet",
+      "Store large files",
+      "Print documents"
+    ],
+    "answer_index": 0,
+    "explanation": "Computer vision extracts meaning from visual data."
+  },
+  {
+    "id": "ai-e-05",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Easy",
+    "concept": "History",
+    "question": "Who proposed the 'Turing Test' for machine intelligence?",
+    "options": [
+      "Marvin Minsky",
+      "Geoffrey Hinton",
+      "John McCarthy",
+      "Alan Turing"
+    ],
+    "answer_index": 3,
+    "explanation": "Alan Turing proposed it in 1950 as a way to consider whether machines can think."
+  },
+  {
+    "id": "ai-m-01",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Medium",
+    "concept": "Neural Networks",
+    "question": "Artificial neural networks are loosely inspired by:",
+    "options": [
+      "Network cables",
+      "Neurons in the biological brain",
+      "Search engines",
+      "Computer motherboards"
+    ],
+    "answer_index": 1,
+    "explanation": "They use connected 'neurons' arranged in layers, inspired by the brain."
+  },
+  {
+    "id": "ai-m-02",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Medium",
+    "concept": "Learning Paradigms",
+    "question": "In which type of learning does an agent learn from rewards and penalties?",
+    "options": [
+      "Reinforcement learning",
+      "Unsupervised learning",
+      "Transfer learning",
+      "Supervised learning"
+    ],
+    "answer_index": 0,
+    "explanation": "Reinforcement learning maximises cumulative reward through trial and error."
+  },
+  {
+    "id": "ai-m-03",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Medium",
+    "concept": "Symbolic AI",
+    "question": "What do classic expert systems mainly rely on?",
+    "options": [
+      "Random guessing",
+      "Raw pixel data",
+      "Large neural networks",
+      "A knowledge base of rules from human experts"
+    ],
+    "answer_index": 3,
+    "explanation": "Expert systems use if-then rules captured from domain experts."
+  },
+  {
+    "id": "ai-m-04",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Medium",
+    "concept": "AI Types",
+    "question": "What is 'narrow AI'?",
+    "options": [
+      "AI that can do any human task",
+      "AI that runs on narrow networks",
+      "AI with very little data",
+      "AI designed for a specific task"
+    ],
+    "answer_index": 3,
+    "explanation": "Narrow AI (e.g., spam filters) is built for one task; general AI is hypothetical."
+  },
+  {
+    "id": "ai-m-05",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Medium",
+    "concept": "Search",
+    "question": "Which search algorithm uses a heuristic function to guide its search?",
+    "options": [
+      "Linear search",
+      "Binary tree",
+      "Bubble sort",
+      "A*"
+    ],
+    "answer_index": 3,
+    "explanation": "A* combines the path cost so far with a heuristic estimate to the goal."
+  },
+  {
+    "id": "ai-h-01",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "concept": "Search",
+    "question": "Breadth-first search explores nodes using which data structure?",
+    "options": [
+      "Hash table",
+      "Queue",
+      "Heap",
+      "Stack"
+    ],
+    "answer_index": 1,
+    "explanation": "BFS uses a FIFO queue to explore level by level."
+  },
+  {
+    "id": "ai-h-02",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "concept": "Ethics",
+    "question": "Which is a common source of bias in AI systems?",
+    "options": [
+      "Using a larger monitor",
+      "Writing more comments",
+      "Unrepresentative training data",
+      "Using a faster computer"
+    ],
+    "answer_index": 2,
+    "explanation": "If training data under-represents groups, the model can perform unfairly for them."
+  },
+  {
+    "id": "ai-h-03",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "concept": "Agents",
+    "question": "Which agent type chooses actions to maximise expected utility?",
+    "options": [
+      "Random agent",
+      "Table lookup agent",
+      "Utility-based agent",
+      "Simple reflex agent"
+    ],
+    "answer_index": 2,
+    "explanation": "Utility-based agents weigh outcomes using a utility function."
+  },
+  {
+    "id": "ai-h-04",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "concept": "Search",
+    "question": "What does it mean for a heuristic to be 'admissible'?",
+    "options": [
+      "It ignores the goal",
+      "It never overestimates the true cost to reach the goal",
+      "It is always zero",
+      "It always equals the true cost"
+    ],
+    "answer_index": 1,
+    "explanation": "Admissible heuristics keep A* optimal."
+  },
+  {
+    "id": "ai-h-05",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "concept": "Game Playing",
+    "question": "The minimax algorithm is mainly used in:",
+    "options": [
+      "Image compression",
+      "Email filtering",
+      "Database indexing",
+      "Two-player adversarial games"
+    ],
+    "answer_index": 3,
+    "explanation": "Minimax assumes each player picks the move that is best for them."
+  },
+  {
+    "id": "dsa-e-01",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "concept": "Stacks and Queues",
+    "question": "Which data structure follows the Last-In-First-Out (LIFO) principle?",
+    "options": [
+      "Stack",
+      "Linked list",
+      "Array",
+      "Queue"
+    ],
+    "answer_index": 0,
+    "explanation": "A stack removes the most recently added item first."
+  },
+  {
+    "id": "dsa-e-02",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "concept": "Stacks and Queues",
+    "question": "Which data structure follows the First-In-First-Out (FIFO) principle?",
+    "options": [
+      "Tree",
+      "Stack",
+      "Graph",
+      "Queue"
+    ],
+    "answer_index": 3,
+    "explanation": "A queue removes the oldest item first, like a line of people."
+  },
+  {
+    "id": "dsa-e-03",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "concept": "Arrays",
+    "question": "In Python, what is the index of the first element of a list?",
+    "options": [
+      "1",
+      "-1",
+      "It depends on the list",
+      "0"
+    ],
+    "answer_index": 3,
+    "explanation": "Python uses zero-based indexing."
+  },
+  {
+    "id": "dsa-e-04",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "concept": "Complexity",
+    "question": "What is the time complexity of accessing an array element by index?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "answer_index": 3,
+    "explanation": "Direct indexing takes constant time."
+  },
+  {
+    "id": "dsa-e-05",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Easy",
+    "concept": "Linked Lists",
+    "question": "What does a node of a singly linked list contain?",
+    "options": [
+      "A hash value only",
+      "Data and a reference to the next node",
+      "Two arrays",
+      "Only data"
+    ],
+    "answer_index": 1,
+    "explanation": "Each node stores a value and a pointer to the next node."
+  },
+  {
+    "id": "dsa-m-01",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "concept": "Searching",
+    "question": "Binary search requires the array to be:",
+    "options": [
+      "Of even length",
+      "Unsorted",
+      "Sorted",
+      "Made of integers only"
+    ],
+    "answer_index": 2,
+    "explanation": "Binary search halves a sorted search range each step."
+  },
+  {
+    "id": "dsa-m-02",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "concept": "Sorting",
+    "question": "What is the worst-case time complexity of bubble sort?",
+    "options": [
+      "O(n^2)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer_index": 0,
+    "explanation": "Bubble sort compares adjacent pairs repeatedly, giving quadratic time."
+  },
+  {
+    "id": "dsa-m-03",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "concept": "Trees",
+    "question": "In-order traversal of a binary search tree visits the keys in what order?",
+    "options": [
+      "Descending order",
+      "Sorted ascending order",
+      "Random order",
+      "Level by level"
+    ],
+    "answer_index": 1,
+    "explanation": "Left, root, right visits BST keys in ascending order."
+  },
+  {
+    "id": "dsa-m-04",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "concept": "Hashing",
+    "question": "What is the average-case lookup time in a well-designed hash table?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "answer_index": 0,
+    "explanation": "Hashing maps keys directly to positions, giving constant average time."
+  },
+  {
+    "id": "dsa-m-05",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Medium",
+    "concept": "Trees",
+    "question": "In a binary tree (root at level 0), what is the maximum number of nodes at level L?",
+    "options": [
+      "2L",
+      "2^L",
+      "L^2",
+      "L + 1"
+    ],
+    "answer_index": 1,
+    "explanation": "Each level can double the node count: 1, 2, 4, 8, ..."
+  },
+  {
+    "id": "dsa-h-01",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Hard",
+    "concept": "Sorting",
+    "question": "What is the worst-case time complexity of merge sort?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(n^2)"
+    ],
+    "answer_index": 2,
+    "explanation": "Merge sort always splits in half and merges in linear time."
+  },
+  {
+    "id": "dsa-h-02",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Hard",
+    "concept": "Graphs",
+    "question": "What problem does Dijkstra's algorithm solve?",
+    "options": [
+      "Sorting an array",
+      "Finding minimum spanning tree only",
+      "Single-source shortest paths with non-negative weights",
+      "Detecting palindromes"
+    ],
+    "answer_index": 2,
+    "explanation": "It finds the shortest distance from one source to all other nodes when weights are non-negative."
+  },
+  {
+    "id": "dsa-h-03",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Hard",
+    "concept": "Graphs",
+    "question": "Which graph traversal uses a queue?",
+    "options": [
+      "Prim's algorithm only",
+      "Breadth-first search",
+      "Depth-first search (recursive)",
+      "Topological sort only"
+    ],
+    "answer_index": 1,
+    "explanation": "BFS uses a queue; DFS uses a stack or recursion."
+  },
+  {
+    "id": "dsa-h-04",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Hard",
+    "concept": "Dynamic Programming",
+    "question": "Dynamic programming is useful when a problem has:",
+    "options": [
+      "Only one solution",
+      "Randomised inputs",
+      "No repeated work",
+      "Overlapping subproblems and optimal substructure"
+    ],
+    "answer_index": 3,
+    "explanation": "DP stores solutions to subproblems to avoid recomputation."
+  },
+  {
+    "id": "dsa-h-05",
+    "topic": "Data Structures and Algorithms",
+    "difficulty": "Hard",
+    "concept": "Trees",
+    "question": "Roughly how tall is a balanced binary tree with n nodes?",
+    "options": [
+      "log2(n)",
+      "2^n",
+      "n^2",
+      "n"
+    ],
+    "answer_index": 0,
+    "explanation": "A balanced tree halves the remaining nodes at each level."
+  },
+  {
+    "id": "cn-e-01",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "concept": "Basics",
+    "question": "What does IP stand for in networking?",
+    "options": [
+      "Input Packet",
+      "Internal Process",
+      "Integrated Program",
+      "Internet Protocol"
+    ],
+    "answer_index": 3,
+    "explanation": "IP is the protocol that addresses and routes packets."
+  },
+  {
+    "id": "cn-e-02",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "concept": "Devices",
+    "question": "Which device forwards data packets between different networks?",
+    "options": [
+      "Keyboard",
+      "Router",
+      "Monitor",
+      "Hub only"
+    ],
+    "answer_index": 1,
+    "explanation": "Routers connect networks and choose paths for packets."
+  },
+  {
+    "id": "cn-e-03",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "concept": "Ports",
+    "question": "What is the default port for HTTP?",
+    "options": [
+      "21",
+      "80",
+      "443",
+      "25"
+    ],
+    "answer_index": 1,
+    "explanation": "HTTP uses port 80; HTTPS uses 443."
+  },
+  {
+    "id": "cn-e-04",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "concept": "Application Layer",
+    "question": "Which service translates domain names into IP addresses?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "SMTP",
+      "FTP"
+    ],
+    "answer_index": 0,
+    "explanation": "DNS works like the internet's phone book."
+  },
+  {
+    "id": "cn-e-05",
+    "topic": "Computer Networks",
+    "difficulty": "Easy",
+    "concept": "Basics",
+    "question": "What does LAN stand for?",
+    "options": [
+      "Long Array Network",
+      "Linked Access Node",
+      "Local Area Network",
+      "Large Area Network"
+    ],
+    "answer_index": 2,
+    "explanation": "A LAN covers a small area such as a home or campus."
+  },
+  {
+    "id": "cn-m-01",
+    "topic": "Computer Networks",
+    "difficulty": "Medium",
+    "concept": "OSI Model",
+    "question": "How many layers does the OSI model have?",
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "answer_index": 2,
+    "explanation": "The OSI model has seven layers; the TCP/IP model has four."
+  },
+  {
+    "id": "cn-m-02",
+    "topic": "Computer Networks",
+    "difficulty": "Medium",
+    "concept": "Transport Layer",
+    "question": "Which statement about TCP is correct?",
+    "options": [
+      "It works only on LANs",
+      "It does not use ports",
+      "It is connection-oriented and reliable",
+      "It is connectionless and unreliable"
+    ],
+    "answer_index": 2,
+    "explanation": "TCP sets up a connection and ensures ordered delivery; UDP is connectionless."
+  },
+  {
+    "id": "cn-m-03",
+    "topic": "Computer Networks",
+    "difficulty": "Medium",
+    "concept": "OSI Model",
+    "question": "Which OSI layer is responsible for logical addressing and routing?",
+    "options": [
+      "Network layer",
+      "Presentation layer",
+      "Physical layer",
+      "Session layer"
+    ],
+    "answer_index": 0,
+    "explanation": "The network layer (IP) handles addressing and routing."
+  },
+  {
+    "id": "cn-m-04",
+    "topic": "Computer Networks",
+    "difficulty": "Medium",
+    "concept": "Application Layer",
+    "question": "Which protocol is mainly used to send email?",
+    "options": [
+      "SMTP",
+      "DNS",
+      "ARP",
+      "HTTP"
+    ],
+    "answer_index": 0,
+    "explanation": "SMTP sends mail; POP3 and IMAP retrieve it."
+  },
+  {
+    "id": "cn-m-05",
+    "topic": "Computer Networks",
+    "difficulty": "Medium",
+    "concept": "IP Addressing",
+    "question": "How many bits are in an IPv4 address?",
+    "options": [
+      "32",
+      "128",
+      "64",
+      "16"
+    ],
+    "answer_index": 0,
+    "explanation": "IPv4 uses 32 bits; IPv6 uses 128 bits."
+  },
+  {
+    "id": "cn-h-01",
+    "topic": "Computer Networks",
+    "difficulty": "Hard",
+    "concept": "IP Addressing",
+    "question": "The subnet mask 255.255.255.0 corresponds to which CIDR prefix?",
+    "options": [
+      "/32",
+      "/8",
+      "/24",
+      "/16"
+    ],
+    "answer_index": 2,
+    "explanation": "Three full octets of 1s equal 24 network bits."
+  },
+  {
+    "id": "cn-h-02",
+    "topic": "Computer Networks",
+    "difficulty": "Hard",
+    "concept": "Transport Layer",
+    "question": "What is the correct order of the TCP three-way handshake?",
+    "options": [
+      "SYN-ACK, SYN, ACK",
+      "SYN, ACK, FIN",
+      "ACK, SYN, SYN-ACK",
+      "SYN, SYN-ACK, ACK"
+    ],
+    "answer_index": 3,
+    "explanation": "The client sends SYN, the server replies SYN-ACK, and the client sends ACK."
+  },
+  {
+    "id": "cn-h-03",
+    "topic": "Computer Networks",
+    "difficulty": "Hard",
+    "concept": "Application Layer",
+    "question": "What does DHCP do?",
+    "options": [
+      "Transfers files",
+      "Automatically assigns IP addresses to devices",
+      "Encrypts web traffic",
+      "Translates domain names"
+    ],
+    "answer_index": 1,
+    "explanation": "DHCP gives devices IP configuration automatically."
+  },
+  {
+    "id": "cn-h-04",
+    "topic": "Computer Networks",
+    "difficulty": "Hard",
+    "concept": "Link Layer",
+    "question": "What does ARP resolve?",
+    "options": [
+      "Ports to protocols",
+      "Domain names to IP addresses",
+      "MAC addresses to domain names",
+      "IP addresses to MAC addresses"
+    ],
+    "answer_index": 3,
+    "explanation": "ARP finds the hardware address that matches an IP on the local network."
+  },
+  {
+    "id": "cn-h-05",
+    "topic": "Computer Networks",
+    "difficulty": "Hard",
+    "concept": "IP Addressing",
+    "question": "What is the main purpose of NAT?",
+    "options": [
+      "Assign domain names",
+      "Detect viruses",
+      "Encrypt email",
+      "Translate private IP addresses to public ones"
+    ],
+    "answer_index": 3,
+    "explanation": "NAT lets many private devices share one public IP address."
+  }
+]

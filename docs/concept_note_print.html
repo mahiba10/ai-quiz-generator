@@ -1,0 +1,80 @@
+<html><head><meta charset='utf-8'><style>body{font-family:Georgia,serif;max-width:800px;margin:2rem auto;line-height:1.55;color:#222;padding:0 1rem}
+h1{border-bottom:2px solid #4F46E5;padding-bottom:.3rem}h2{color:#4F46E5;margin-top:1.6rem}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #bbb;padding:6px 10px;text-align:left}
+code{background:#f3f4f8;padding:1px 4px}@media print{body{margin:0;max-width:none}h2{page-break-after:avoid}}</style></head><body><h1>Concept Note</h1>
+<p><strong>Project title:</strong> AI-Powered Quiz Generator and Personalized Learning Assistant
+<strong>Student/author:</strong> <em>[Your name, roll number, college]</em>
+<strong>Internship:</strong> AICTE–IBM SkillsBuild Machine Learning and Applied AI Internship
+<strong>SDG alignment:</strong> SDG 4 – Quality Education</p>
+<h2>1. Abstract</h2>
+<p>This project is a Streamlit web application for self-assessment. Students select a topic, difficulty and number of questions,
+answer multiple-choice questions from a curated bank, and receive scores, explanations and revision recommendations
+derived from their actual answers. A lightweight scikit-learn text classifier (TF-IDF with a linear classifier) predicts the likely
+topic of a learning query and suggests a quiz. Evaluation results: <strong>pending — to be copied from <code>models/metrics.json</code> after you run the training script.</strong></p>
+<h2>2. Introduction</h2>
+<p>Frequent low-stakes practice with feedback helps learners find gaps. Many students lack a simple, free tool that shows what to revise.</p>
+<h2>3. Problem statement</h2>
+<p>Students struggle to assess their understanding of a topic and to identify what to practise.</p>
+<h2>4. Proposed solution</h2>
+<p>A web app that combines (a) a verified question bank, (b) automatic scoring, (c) rule-based recommendations, and (d) an ML topic classifier.</p>
+<h2>5. Objectives</h2>
+<ol>
+<li>Provide topic-wise MCQ practice. 2. Give immediate feedback with explanations. 3. Recommend concepts to revise. 4. Apply and honestly evaluate one ML technique.</li>
+</ol>
+<h2>6. Scope</h2>
+<p>Five computer-science topics, three difficulty levels, single-user, session-based history. Out of scope: accounts, databases, AI-generated questions, adaptive difficulty.</p>
+<h2>7. Target users</h2>
+<p>Undergraduate engineering students and self-learners studying CS fundamentals.</p>
+<h2>8. Existing approaches and limitations</h2>
+<p>Textbook exercises (no instant feedback), online quiz platforms (often account-based, generic feedback, may need internet or payment), classroom tests (infrequent).</p>
+<h2>9. Proposed methodology</h2>
+<p>Requirements → question-bank curation → dataset creation → model training and evaluation → application development → testing → deployment.</p>
+<h2>10. System architecture</h2>
+<p>Streamlit interface (<code>app.py</code>); quiz logic (<code>utils/quiz_logic.py</code>); recommendation logic (<code>utils/recommendations.py</code>); ML training and prediction (<code>ml/</code>); data files (<code>data/</code>); saved model (<code>models/</code>).</p>
+<h2>11. Dataset description</h2>
+<p><code>data/topic_training_data.csv</code>: 140 hand-written learning queries, 28 per topic, labelled with five topics. Duplicates are removed during training. Question bank: 75 MCQs (5 per topic per difficulty) with concept tags and explanations.</p>
+<h2>12. Machine learning algorithm</h2>
+<p>TF-IDF vectorisation (unigrams and bigrams) followed by a classifier. Multinomial Naive Bayes and Logistic Regression variants are compared by 5-fold cross-validation on the training set; the best is trained and tested once on a held-out stratified 20% test set (random seed 42).</p>
+<h2>13. Training and evaluation methodology</h2>
+<p>Metrics: accuracy, macro precision, recall and F1, per-topic report and confusion matrix. Leakage is avoided through a Pipeline and de-duplication. Low-confidence or unseen-word inputs are reported as uncertain/unknown.</p>
+<h2>14. Software and hardware requirements</h2>
+<p>Python 3.10+, Streamlit, Pandas, scikit-learn, joblib, pytest; any laptop with 4 GB RAM; a web browser. No GPU or paid services.</p>
+<h2>15. Expected outcomes</h2>
+<p>A working, tested app; a documented classifier with honestly reported metrics; deployed demo (after deployment is verified).</p>
+<h2>16. Actual results (to be completed after testing)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automated tests passed</td>
+<td><em>pending – run <code>pytest</code></em></td>
+</tr>
+<tr>
+<td>Classifier test accuracy</td>
+<td><em>pending – from <code>models/metrics.json</code></em></td>
+</tr>
+<tr>
+<td>Macro F1</td>
+<td><em>pending</em></td>
+</tr>
+<tr>
+<td>Deployed URL</td>
+<td><em>pending – add only after verification</em></td>
+</tr>
+</tbody>
+</table>
+<h2>17. Limitations</h2>
+<p>Small hand-made dataset and question bank; the classifier may confuse overlapping topics; recommendations are rule-based; history is not persistent.</p>
+<h2>18. Ethical considerations</h2>
+<p>Questions are verified rather than machine-generated to avoid teaching wrong answers; feedback describes only the quiz result and makes no claims about ability; no personal data is collected or stored; classifier limits are disclosed.</p>
+<h2>19. Future scope</h2>
+<p>Larger bank, spaced repetition, persistent progress, more topics, larger independently collected dataset, human-reviewed AI-assisted question drafting.</p>
+<h2>20. Conclusion</h2>
+<p>The project demonstrates a simple, honest application of ML in education, supporting SDG 4 through accessible self-assessment.</p>
+<h2>21. References</h2>
+<p><em>Add only sources you actually read and cite, for example: scikit-learn documentation (scikit-learn.org), Streamlit documentation (docs.streamlit.io), and the United Nations SDG 4 page (sdgs.un.org/goals/goal4). Do not add references you have not consulted.</em></p></body></html>

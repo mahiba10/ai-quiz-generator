@@ -1,0 +1,124 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "sklearn_version": "1.9.1",
+  "chosen_model": "Logistic Regression (C=10)",
+  "cross_validation_on_training_set": {
+    "Multinomial Naive Bayes": {
+      "mean_macro_f1": 0.6488672438672438,
+      "std": 0.1251293592166227
+    },
+    "Logistic Regression": {
+      "mean_macro_f1": 0.6891255411255411,
+      "std": 0.10840134552827695
+    },
+    "Logistic Regression (C=10)": {
+      "mean_macro_f1": 0.6968888888888889,
+      "std": 0.09950255875017884
+    }
+  },
+  "n_samples_total": 140,
+  "n_train": 112,
+  "n_test": 28,
+  "samples_per_label": {
+    "Artificial Intelligence": 28,
+    "Computer Networks": 28,
+    "Data Structures and Algorithms": 28,
+    "Machine Learning Basics": 28,
+    "Python Programming": 28
+  },
+  "labels": [
+    "Artificial Intelligence",
+    "Computer Networks",
+    "Data Structures and Algorithms",
+    "Machine Learning Basics",
+    "Python Programming"
+  ],
+  "test_accuracy": 0.75,
+  "test_macro_precision": 0.7761904761904762,
+  "test_macro_recall": 0.76,
+  "test_macro_f1": 0.7477855477855477,
+  "classification_report": {
+    "Artificial Intelligence": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1-score": 0.6666666666666666,
+      "support": 6.0
+    },
+    "Computer Networks": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8,
+      "f1-score": 0.7272727272727273,
+      "support": 5.0
+    },
+    "Data Structures and Algorithms": {
+      "precision": 0.7142857142857143,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.7692307692307693,
+      "support": 6.0
+    },
+    "Machine Learning Basics": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 6.0
+    },
+    "Python Programming": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 5.0
+    },
+    "accuracy": 0.75,
+    "macro avg": {
+      "precision": 0.7761904761904762,
+      "recall": 0.76,
+      "f1-score": 0.7477855477855477,
+      "support": 28.0
+    },
+    "weighted avg": {
+      "precision": 0.7780612244897959,
+      "recall": 0.75,
+      "f1-score": 0.7427572427572429,
+      "support": 28.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "note": "Measured on a very small test set; treat these numbers as indicative only."
+}
